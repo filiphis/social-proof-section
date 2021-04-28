@@ -1,16 +1,19 @@
-$color-background: #fff;
 $regular-font: "Lexend Deca", sans-serif;
 $bold-font: "Big Shoulders Display", cursive;
 
-// ### Primary
-$bright-orange: #e38826;
-$dark-cyan: #006970;
-$very-dark-cyan: #004241;
+//# Colors
+$background-color: #ffffff;
 
-// ### Neutral
+//## section call colors
+$call-title-color: #502050;
+$call-description-color: #937b92;
 
-//(paragraphs)
-$transparent-white: rgba(255, 255, 255, 0.75);
+//## section stars colors
+$stars-text-color: #502050;
+$stars-background-color: #f7f2f8;
 
-//(background, headings, buttons)
-$very-light-gray: #f2f2f2;
+//## section testimonials collors
+$testimonials-background-color: #502050;
+$client-name-color: #f7f2f8;
+$client-status-color: #ee68a4;
+$client-testimony-color: #f7f2f8;
