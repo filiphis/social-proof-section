@@ -1,11 +1,11 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Social proof section
 
-<!-- > **_Status:_** Em andamento :construction: -->
-> **_Status:_** Finalizado :heavy_check_mark:
+> **_Status:_** Em andamento :construction:
+<!-- > **_Status:_** Finalizado :heavy_check_mark: -->
 
 ## Preview
 
-Visualize a solução em: https://stats-preview-card-component-eta.vercel.app/
+<!-- Visualize a solução em: https://stats-preview-card-component-eta.vercel.app/ -->
 
 ![Design preview for the coding challenge](./design/desktop-preview.jpg)
 
