@@ -1,0 +1,27 @@
+.stars {
+  margin-top: $global-space * 4;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    max-width: 100%;
+    min-height: 70px;
+    background-color: $stars-background-color;
+    border-radius: $global-border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: $global-space * 1.5;
+    }
+  }
+  &__text {
+    color: $stars-text-color;
+    font-weight: bold;
+  }
+}

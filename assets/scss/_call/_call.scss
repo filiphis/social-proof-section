@@ -1,0 +1,16 @@
+.call {
+  margin-top: $global-space * 5;
+
+  &__title {
+    font-size: 3.2rem;
+    color: $call-title-color;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__description {
+    color: $call-description-color;
+    text-align: center;
+    margin-top: $global-space * 2.4;
+  }
+}

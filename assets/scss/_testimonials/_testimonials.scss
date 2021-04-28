@@ -1,0 +1,54 @@
+.testimonials {
+  margin-top: $global-space * 4;
+  margin-bottom: $global-space * 10;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    max-width: 100%;
+    min-height: 250px;
+    padding: $global-space * 4 $global-space * 2.2 $global-space * 3.5 $global-space * 3;
+    background-color: $testimonials-background-color;
+    border-radius: $global-border-radius;
+
+    &:not(:last-child) {
+      margin-bottom: $global-space * 1.5;
+    }
+  }
+
+  &__client {
+    display: flex;
+    align-items: center;
+  }
+
+  .client {
+    &__image {
+      border-radius: 50%;
+      width: 40px;
+      margin-right: $global-space * 1.6;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+    }
+
+    &__name {
+      color: $client-name-color;
+      font-weight: bold;
+    }
+
+    &__status {
+      color: $client-status-color;
+    }
+  }
+
+  &__testimony {
+    font-size: 1.4rem;
+    margin-top: $global-space * 3;
+    color: $client-testimony-color;
+  }
+}

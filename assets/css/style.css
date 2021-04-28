@@ -143,14 +143,14 @@ table {
 
 body {
   background-color: #ffffff;
-  padding: 4rem 2rem;
+  padding: 4rem 2.4rem;
 }
 
 body,
 input,
 button,
 textarea {
-  font: 400 1.6rem/1.5 "Spartan", sans-serif;
+  font: 400 1.5rem/1.7 "Spartan", sans-serif;
 }
 
 @media (min-width: 730px) {
@@ -163,6 +163,118 @@ html,
 body {
     min-height: 100vh;
   }
+}
+.call {
+  margin-top: 5rem;
+}
+.call__title {
+  font-size: 3.2rem;
+  color: #502050;
+  font-weight: bold;
+  text-align: center;
+}
+.call__description {
+  color: #937b92;
+  text-align: center;
+  margin-top: 2.4rem;
+}
+
+.stars {
+  margin-top: 4rem;
+}
+.stars__list {
+  display: flex;
+  flex-direction: column;
+}
+.stars__item {
+  max-width: 100%;
+  min-height: 70px;
+  background-color: #f7f2f8;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stars__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.stars__text {
+  color: #502050;
+  font-weight: bold;
+}
+
+.testimonials {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+.testimonials__list {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials__item {
+  max-width: 100%;
+  min-height: 250px;
+  padding: 4rem 2.2rem 3.5rem 3rem;
+  background-color: #502050;
+  border-radius: 0.6rem;
+}
+.testimonials__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.testimonials__client {
+  display: flex;
+  align-items: center;
+}
+.testimonials .client__image {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 1.6rem;
+}
+.testimonials .client__info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.testimonials .client__name {
+  color: #f7f2f8;
+  font-weight: bold;
+}
+.testimonials .client__status {
+  color: rgba(238, 104, 164, 0.6);
+}
+.testimonials__testimony {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  color: #f7f2f8;
+}
+
+.socialProof {
+  background-image: url("/assets/images/bg-pattern-top-mobile.svg"), url("/assets/images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, left bottom;
+  background-size: contain, contain;
+}
+
+.socialProof__main {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "call" "stars" "testimonials";
+}
+
+.call {
+  grid-area: call;
+}
+
+.stars {
+  grid-area: stars;
+}
+
+.testimonials {
+  grid-area: testimonials;
 }
 
 /*# sourceMappingURL=style.css.map */
