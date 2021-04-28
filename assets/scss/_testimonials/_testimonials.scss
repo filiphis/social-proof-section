@@ -2,9 +2,19 @@
   margin-top: $global-space * 4;
   margin-bottom: $global-space * 10;
 
+  @include for-tablet {
+    margin-top: $global-space * 7;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
+
+    @include for-tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 270px;
+    }
   }
   &__item {
     max-width: 100%;
@@ -15,6 +25,25 @@
 
     &:not(:last-child) {
       margin-bottom: $global-space * 1.5;
+    }
+
+    @include for-tablet {
+      width: 350px;
+      min-height: 230px;
+      max-height: 230px;
+      &:nth-of-type(1) {
+        align-self: flex-start;
+      }
+      &:nth-of-type(2) {
+        align-self: center;
+      }
+      &:nth-of-type(3) {
+        align-self: flex-end;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -50,5 +79,10 @@
     font-size: 1.4rem;
     margin-top: $global-space * 3;
     color: $client-testimony-color;
+
+    @include for-tablet {
+      font-size: 1.3rem;
+      line-height: 1.7;
+    }
   }
 }

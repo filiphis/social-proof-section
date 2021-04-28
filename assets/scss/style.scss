@@ -8,6 +8,11 @@
   background-repeat: no-repeat, no-repeat;
   background-position: 0 0, left bottom;
   background-size: contain, contain;
+
+  @include for-tablet {
+    background-image: none;
+    padding: 0 $global-space * 2;
+  }
 }
 
 .socialProof__main {
@@ -20,6 +25,15 @@
     "call"
     "stars"
     "testimonials";
+
+  @include for-tablet {
+    max-width: 1200px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "call stars"
+      "testimonials testimonials";
+  }
 }
 
 .call {
